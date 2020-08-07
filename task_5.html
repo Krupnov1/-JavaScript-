@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<script>
-			"use strict"
+			"use strict";
 
 			/*5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
 			     где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
@@ -21,20 +21,16 @@
 				 * @returns {number} 
 				 */
 
-				function mathOperation(arg1, arg2, operation) {
+				function mathOperation(a, b, operation) {
 				  	switch (operation) {
 				  		case "fold":
-				  			return arg1 + arg2;
-				  			break;
+				  			return a + b;
 				  		case "subtract":
-				  			return arg1 - arg2;
-				  			break;
+				  			return a - b;
 				  		case "multiply":
-				  			return arg1 * arg2;
-				  			break;
+				  			return a * b;
 				  		case "share":
-				  			return arg1 / arg2;
-				  			break;
+				  			return a / b;
 				  	}  
 				}
 				alert(mathOperation(5, 6, "fold"));
