@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Задача 4</title>
+	</head>
+	<body>
+		<script>
+			"use strict";
+
+			/*Перед вами находится массив с продуктами в интернет-магазине. Вам нужно:*/
+
+			const products = [ 
+				{ 
+					id: 3, 
+					price: 127, 
+					photos: [ "1.jpg", "2.jpg", ] 
+				}, 
+				{ 
+					id: 5, 
+					price: 499, 
+					photos: [] 
+				}, 
+				{ 
+					id: 10, 
+					price: 26, 
+					photos: [ "3.jpg" ] 
+				}, 
+				{ 
+					id: 8, 
+					price: 78,
+				}, 
+			];
+
+			/*1. Получить все товары, у которых есть фотографии;*/
+
+			let photo = products.filter(function (elements) {
+				return elements.photos;
+			});
+
+			let results = photo.filter(function(element) {
+				return element.photos.length > 0;
+			});
+			console.log(results);
+
+			/*results.forEach(function(photo) {
+				let result = photo.photos;
+				console.log("Товар " + photo.id + " содержит фото");
+			});*/
+
+
+			/*2. Отсортируйте товары по цене (от низкой цены к высокой).*/	
+
+			products.sort(function(a, b) {
+				return a.price - b.price;
+			});
+			console.log(products);
+			
+		</script>
+		
+	</body>
+</html>
