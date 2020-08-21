@@ -1,0 +1,37 @@
+button {
+	height: 50px;
+	font-size: 16px;
+	border-radius: 7px;
+	background: #E6E6E6;
+}
+
+.wind {
+	width: 306px;
+	height: auto;
+	background: #E6E6E6;
+	border: 1px solid #000;
+	border-radius: 7px;
+	font-size: 17px;
+	padding: 5px;
+	position: fixed;
+	left: 322px;
+	top: 54px;
+}
+
+.hide {
+	display: none;
+}
+
+span {
+	font-size: 30px;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+    width: 40px;
+    float: right;
+}
+
+span:hover {
+	background: red;
+	color: #fff;
+}

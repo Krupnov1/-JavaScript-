@@ -1,0 +1,22 @@
+.product {
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+
+.productName {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product img {
+    display: block;
+}
+
+button {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+
