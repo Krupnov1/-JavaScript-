@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 5</title>
+	</head>
+	<body>
+		<script>
+			"use strict";
+
+			/*5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+			     где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+			     переданного значения операции (использовать switch) выполнить одну из арифметических операций
+			     (использовать функции из задания 4) и вернуть полученное значение.*/
+
+			      /**
+                 * Функция производит математическую операцию (сложение, вычитание, умножение, деление) по заданному параметру.
+				 * @param {number} arg1
+				 * @param {number} arg2
+				 * @param {string} operation
+				 * @returns {number} 
+				 */
+
+				function mathOperation(a, b, operation) {
+				  	switch (operation) {
+				  		case "fold":
+				  			return a + b;
+				  		case "subtract":
+				  			return a - b;
+				  		case "multiply":
+				  			return a * b;
+				  		case "share":
+				  			return a / b;
+				  	}  
+				}
+				alert(mathOperation(5, 6, "fold"));
+				alert(mathOperation(11, 4, "subtract"));
+				alert(mathOperation(7, 2, "multiply"));
+				alert(mathOperation(25, 5, "share"));
+		</script>
+	</body>
+</html>
