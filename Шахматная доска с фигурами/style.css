@@ -1,0 +1,48 @@
+table {
+	border-collapse: collapse;
+	width: auto;
+	margin: 40px auto;
+}
+
+td {
+	width: 70px;
+	height: 70px;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+td span {
+	font-size: 18px;
+	font-family: "Roboto", serif;
+	font-weight: bold;
+	color: #ffeecb;
+}
+
+.white {
+	background: #F2D05B;
+}
+
+.black {
+	background: #bb6034;
+}
+
+.column {
+	width: 20px;
+	background: #651516;
+}
+
+td[data-rownum="9"], [data-rownum="0"] {
+	height: 20px;
+	background: #651516;
+}
+
+.blackFigure {
+	color: #272924;
+	font-size: 51px;
+}
+
+.whiteFigure {
+	color: #E6E0FF;
+	font-size: 51px;
+}
+
