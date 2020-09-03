@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+		<title>Корзина</title>
+	</head>
+	<body>
+
+		<!--Реализовать модуль корзины на странице. У каждого товара есть кнопка «Купить», при нажатии на которую происходит добавление id, имени и цены товара в блок корзины. Корзина должна уметь считать общую сумму заказа. Один товар можно добавить несколько раз. Товары на страницу можно добавить без применения js, т.е. просто сверстайте блоки на html/css.-->		
+
+		<div class="container">
+			<header>
+				<button class="butHead">Корзина<i class="fas fa-caret-down"></i></button>
+				<div class="basketBlock blockNone">
+					<table>
+						<thead>
+							<tr class="row">
+								<th>ID</th>
+								<th>Наименование</th>
+								<th>Цена</th>
+								<th>Количество</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+						<tfoot>
+							<tr class="rowFoot">
+								<th colspan="2">Итого:</th>
+								<td colspan="3"><span class="total">0</span><i class="fas fa-ruble-sign"></td>
+							</tr>
+						</tfoot>
+						
+					</table>
+				</div>
+			</header>
+			<div class="catalog">
+				<section class="product">
+					<h3>Товар 1</h3>
+					<img src="img/img_1.jpg" alt="product_1">
+					<span class="prodSpan">2 000<i class="fas fa-ruble-sign"></i></span>
+					<button class="butSection" data-id="1" data-name="Товар 1"data-price="2000" >В корзину</button>
+				</section>
+				<section class="product">
+					<h3>Товар 2</h3>
+					<img src="img/img_2.jpg" alt="product_2">
+					<span class="prodSpan">4 000<i class="fas fa-ruble-sign"></i></span>
+					<button class="butSection" data-id="2" data-name="Товар 2"data-price="4000" >В корзину</button>
+				</section>
+				<section class="product">
+					<h3>Товар 3</h3>
+					<img src="img/img_3.jpg" alt="product_3">
+					<span class="prodSpan">8 000<i class="fas fa-ruble-sign"></i></span>
+					<button class="butSection" data-id="3" data-name="Товар 3"data-price="8000" >В корзину</button>
+				</section>
+			</div>
+		</div>
+
+
+
+
+
+
+		<script src="script.js"></script>
+	</body>
+</html>

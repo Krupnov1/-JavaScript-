@@ -1,0 +1,85 @@
+.container {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	background: #696969;
+	min-height: 50px;
+	padding: 20px 40px 20px 20px;
+	position: relative;
+
+}
+
+.butHead {
+	width: 140px;
+	height: 50px;
+	background: #D3D3D3;
+	font-size: 20px;
+	float: right;
+}
+
+.fas {
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.basketBlock {
+	width: 350px;
+	padding: 10px;
+	position: absolute;
+    right: 39px;
+    top: 70px;
+    background: #fff;
+    border: 1px solid #000;
+    font-size: 18px;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.blockNone {
+	display: none;
+}
+
+table {
+	width: 100%;
+}
+
+.row, .rowFoot {
+	height: 40px;
+}
+
+.row th {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.rowFoot {
+	text-align: left;
+}
+
+.catalog {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.prodSpan {
+	display: block;
+	font-size: 22px;
+	margin: 20px 0; 
+}
+
+.butSection {
+	width: 120px;
+	height: 40px;
+	background: #32CD32;
+	font-size: 22px;
+}
+
