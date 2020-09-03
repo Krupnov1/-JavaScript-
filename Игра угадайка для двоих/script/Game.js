@@ -5,7 +5,6 @@ class Game {
     tryCount = 0;
     maxTryCount = 10;
     answer = parseInt(Math.random() * 100);
-    //infoEl = "";
     player = "";
 
     /**
